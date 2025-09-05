@@ -1,7 +1,16 @@
-# Script genérico de ruby
+# Calcular mostrar el equivalente en tasa oficial de una cantidad en dólares
 
-Éste sería el _template_ de un script genérico de ruby. Viene con `rspec`.
+Se ejecuta así:
 
-La idea es que se use como semilla para desarrollar un script propio. En esa
-dirección tiene algunas cositas previamente configuradas, como el uso de
-`rspec` como librería de pruebas y un mínimo `Gemfile`.
+```bash
+$ bin/get-bcv 43
+# Son 1848.13 bolívares a tasa 154.01
+```
+
+Se recomienda colocar en una carpeta ejecutable el siguiente script
+
+```bash
+#!/usr/bin/env bash
+
+$PATH_TO_REPO/bin/get-bcv $1
+```

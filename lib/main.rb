@@ -13,8 +13,7 @@ class Main
 
   def call
     if errors.empty?
-      printf("Son %.2f bolívares\n", price * dollars)
-      # puts "Son #{price * dollars} bolívares"
+      puts("Son %.2f bolívares a tasa %.2f" % [price * dollars, price])
     else
       errors.each do |error|
         puts error
