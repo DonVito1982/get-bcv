@@ -41,8 +41,4 @@ class Main
       @errors.push("Se requiere 1 argumento y tienes #{@arguments.length}")
     end
   end
-
-  def message
-    "Hola Victor"
-  end
 end
